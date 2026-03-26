@@ -1,3 +1,6 @@
+// CALLBACK HELL
+
+
 // we are here gonna use readfilde method
 
 const {readFile,  writeFile}= require('fs') 
@@ -52,7 +55,7 @@ readFile('../content/first.txt','utf8',(err,result)=>{
      console.log(result)// if everything correct console.log result
     })// making the callback having error and result
 
-    })
+    })// result will be undefined bcz we are not expecting anything back but we git a file result-async.xt
 })    
 
 /* CALL BACK HELL
