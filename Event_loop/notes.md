@@ -11,8 +11,12 @@
 - we can offload that time consimusing opperation to the browser it doesnt mean we can offload for loops[we can still wright blocking code in js] browser does provide some apis where we dont have to write the blocking code , browser does provude some nice apis where we can offload those time consuming tasks and that brings us to our main freind the nodejs event loop before i go over the ex let me stress something event loop is somewhat complex
 
 
-                           ---->Register DB 
----->REQUSET[client|se]                     <-----Complete                          from [dtabase , file system, networks, others]
+                                    ---->Register DB 
+
+
+                                -------------->    
+---->REQUSET[client|se]      |   event loop    |                    <-----Complete                          from [dtabase , file system, networks,
+                               <------------                                                                                               others]
 
                          <-----excute cb
 
