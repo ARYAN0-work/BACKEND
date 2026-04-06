@@ -13,7 +13,7 @@ const server = http.createServer((req,res)=>{
     res.writeHead(200,{'content-type':'text/html'})//text/plain no html will be used and it will shown onscreen as it is written & also this stauts codes matter i mean each ststaus code havbe a meaning 200= ok[request has succeded], 400[bad request] =also use write status code bcz on brower inspect network it will give you a hint how does it affect our response
 
 
-    // only remebr => you are decribing to browser what are you sending back image html css and if you change mime type brower will chang that content type header yes the browser will intrept that diffrently and once we succsefully have more proper response now lets start
+    // only remebr => you are decribing to browser what are you sending back image html css and if you change mime type brower will chang that content type header yes the browser will intrept that diffrently and once we succsefully have more proper response 
     res.write('<h1>home page</h1>')
     res.end()/// you can directly pass into res.end
 })
