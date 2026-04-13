@@ -1,6 +1,6 @@
 ## NOTES
 
-- theres node modules built in modules and worlds biggest modules which we can use now imagine our project need a slider so theres two way either create it from scratch or take help theres someone who build it already bcz he faced the same issue so the point is copy paste it just from one command and jsut add it to our project we can do this ncz when we install node it also installs npm[node package manger] and it enables us to do three things =>
+- theres node modules.com built in modules and worlds biggest modules which we can use now imagine our project need a slider so theres two way either create it from scratch or take help theres someone who build it already bcz he faced the same issue so the point is copy paste it just from one command and jsut add it to our project we can do this ncz when we install node it also installs npm[node package manger] and it enables us to do three things =>
 
  => use code written by other project
  => reuse our own code in other project
