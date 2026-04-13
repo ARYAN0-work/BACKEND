@@ -1,17 +1,19 @@
 ## FLOWCHART
 
-1. why we write code in diffrent files
+1. why we write code in diffrent files = bcz of jamming between files
 2. these is a ex how things are connected between 5-utils.js, 4-name.js, first moule  = full code is in the module.js
 
 
 
 ## modeule.js 
 
-- it contains the whole disturbuted code in all the files
+- it contains the whole disturbuted code in all the files[every file is module by default in js]
+
+- MODULES[enscapulated code => only sharing what we want]
 
 ## 5-utils.js
 
-It contains sayhi fn which we exported in the file module.js
+It contains sayhi fn which prints hello there we exported in the file module.js
 
 ## 4-name.js
 

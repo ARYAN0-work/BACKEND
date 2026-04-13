@@ -1,6 +1,5 @@
 // allow us to interact with file path easily
-
-//const { log } = require('console'); 
+ 
 const path = require('path')
 //
 console.log(path.sep);// seprator property my returns platform related seprator

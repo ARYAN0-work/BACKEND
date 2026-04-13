@@ -9,7 +9,7 @@ const {readFile,  writeFile}= require('fs')
 
 //=> callback fn will everytime run when we click on the btn so this is the same thing
 
-// we use readfikde fn then we str it and provide path and then second argument which is callbacj fn and in that callback fn we provide more arguments in which first one is error if thereis one as well as the result and then insde of the body first i would want to check if there is an error and then i can just return null as well as maybe console.log and if every thing is coorect i am gonna have acces to my data  |  parameter name result and this is where you setup the functinalty
+// we use readfile fn then we str it and provide path and then second argument which is callback fn and in that callback fn we provide more arguments in which first one is error if there is one as well as the result and then insde of the body first i would want to check if there is an error and then i can just return null as well as maybe console.log and if every thing is coorect i am gonna have acces to my data  |  parameter name result and this is where you setup the functinalty
 
 readFile('../content/first.txt',(err,result)=>{
     if (err) {
@@ -29,7 +29,7 @@ readFile('../content/first.txt','utf8',(err,result)=>{
 })
 
 //=> now the quest how we can setup same functionalty
-// we have read file read file and then we simply create a new file with both of these values if youre familiar with callbacks you know you have to setup this parameters insidde of the calllback where i am gettijg this result
+// we have read file  and then we simply create a new file with both of these values if youre familiar with callbacks you know you have to setup this parameters insidde of the calllback where i am gettijg this result
 
 // => now i am gonna assign it some variable then i would want to read tat second file and then eventually once i read the 2nd file then of course i would want to create that new file and the way its goping to look like  =>
 
@@ -54,7 +54,27 @@ readFile('../content/first.txt','utf8',(err,result)=>{
      }
      console.log(result)// if everything correct console.log result
     })// making the callback having error and result
+/*
+result is usually undefined (writeFile doesn’t return data)
+⚠️ Important observation (your comment)
 
+You wrote:
+
+// result will be undefined...
+
+✅ Correct — because:
+
+writeFile only writes data
+It does NOT return anything useful
+🔗 Flow in simple words
+
+👉 Your code is doing this:
+
+Read first file
+After that → read second file
+After that → create new file with both contents
+
+*/
     })// result will be undefined bcz we are not expecting anything back but we git a file result-async.xt
 })    
 

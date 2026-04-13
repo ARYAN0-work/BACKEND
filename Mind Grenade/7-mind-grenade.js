@@ -7,3 +7,5 @@ function addValues() {
 }
 
 addValues()
+
+// if you dont export anything you will get empty brackets

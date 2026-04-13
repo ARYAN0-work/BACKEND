@@ -19,3 +19,4 @@ const person ={
 module.exports.singlePerson = person 
 // WHY
 //=>  in the previous video when we console.log module.exports it was an objectwe are setting a property on that object and set it ti equal to an array 
+

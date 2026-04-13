@@ -44,7 +44,7 @@ console.log('starting with new task');
 // notice we have starting with new task at next after start 
 // since we asynchronus approch the moment we start we just offload the task and we continue our code and
 // and user no. one get her for ex  he  wants to get this functinalaty=>
-    // node can offload this task and start on serving other users agaon it seems a but trivial at the moment bcz wehave the basic approch
+// node can offload this task and start on serving other users agaon it seems a but trivial at the moment bcz wehave the basic approch
 
 // => but notice its a bit messy we want acomplish only some tasks now alternative are using promises as well as async await
 

@@ -1,4 +1,6 @@
-require('./7-mind-grenade')
+const num =require('./7-mind-grenade')
+
+console.log(num);
 
 // when we are setting everything if we have a fn inside of a module that we invoke  even though we didnt assign it to a variable you can see it clewarly we didnt invoke that variable
 
