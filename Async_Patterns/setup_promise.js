@@ -3,13 +3,12 @@
 // SOLN => TUEN IT INTO THIS A PROMISE => AND WE WILL SETUP ASYNC AWAIT
 
 const {readFile} = require('fs')
-const { result } = require('lodash')
 
 const getText =(path)=>{ // you made a fn getText and it take a input path[file location]
     return new Promise((resolve,reject)=>{ // creatibg a new promise has 2 outcomes
 readFile(path,'utf8',(err,data)=>{// i called readfile | file location | read as text | call back[if something else,file  content]
     if (err) { // if file rading fails call  reject(err)
-        reject(err) // this sends data to .then()
+        reject(err) // this sends data to .catch()
     } else{
        resolve(data)
     }
