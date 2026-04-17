@@ -1,6 +1,6 @@
 ## ABOUT
 
-- in this we are having a app and we want to oresent it on the server
+- in this we are having a app and we want to present it on the server
 
 - assume the app files are in this folder and when yo create app.js in HTTP you will egt a lot of 404 and html text but it will load
 
