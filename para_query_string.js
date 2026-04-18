@@ -13,7 +13,7 @@ app.get('/api/products',(req,res)=>{
         return {id,name,image}
     })
 
-    res.json(products)
+    res.json(newProducts)
 })
 
 app.listen(5000,()=>{

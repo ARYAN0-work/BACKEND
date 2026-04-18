@@ -3,7 +3,7 @@ const app =express()
 const {products} = require('./data')
 
 app.get('/',(req,res)=>{
-    res.json(products)
+   // res.json(products) server can send only one response per request
     res.json([{name:'john'}, {name:'susan'}])// we provide two objects
 })
 
