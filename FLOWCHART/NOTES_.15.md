@@ -158,3 +158,5 @@ Reduce it to ONE sentence:
 “Frontend sends request → backend processes → sends response”
 
 That’s backend.
+
+- still left a little bit
