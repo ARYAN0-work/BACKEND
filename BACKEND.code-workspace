@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "BACKEND",
+			"path": "."
+		},
+		{
+			"name": "methods-public",
+			"path": "../JOHNSMILGA/node-express-course/02-express-tutorial/methods-public"
+		}
+	],
+	"settings": {
+		"git.ignoreLimitWarning": true
+	}
+}
