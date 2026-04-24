@@ -5,6 +5,8 @@ POST → Insert Data
 PUT → Update Data
 DELETE → Delete Data
 
+        CONVENTION [--> BELOW]
+
 GET     www.store.com/api/orders
         → get all orders
 
