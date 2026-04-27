@@ -23,3 +23,34 @@ __filename
 require
 process
 
+# why we need node.js
+Why we need Node.js
+
+Think of Node.js as:
+
+“JavaScript outside the browser”
+
+Before Node:
+
+JS only worked in browsers
+You couldn’t build servers with JS
+
+Node gives you:
+
+File system access (fs)
+Network handling (http)
+
+# problem 
+
+Now imagine building a real app using only Node:
+
+You’d have to manually:
+
+Handle routes (if req.url === ...)
+Handle methods (GET, POST)
+Parse request body
+Set headers
+Handle errors everywhere
+
+Example gets ugly fast:
+
