@@ -1,3 +1,5 @@
+// A PRACTICAL EXAMPLE HOW A API GETS CREATED
+
 const express = require('express')
 const app =express()
 const {products} = require('./data')
@@ -14,9 +16,9 @@ app.get('/api/products',(req,res)=>{
     res.json(newProducts)
 })
 
-app.get('/api/products/:productID/reviews/:reviewID',(req,res)=>{
+app.get('/api/products/:productID/reviews/:reviewID',(req,res)=>{// nested data
     console.log(req.params)
-    res.send('hello world')
+    res.send(`Product: ${productID}, Review: ${reviewID}`)
     
 })
 app.listen(5000,()=>{

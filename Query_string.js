@@ -3,7 +3,7 @@ const app =express()
 const {products} = require('./data')
 
 
-// way to send small amount of url to tyhe server=> this info is used as parameters to fir ex. query database or filter result and thats really up depend on people who are creating sevrer what functionaly will depend on those values and what parameter gonna setup
+// way to send small amount of url to the server=> this info is used as parameters to fir ex. query database or filter result and thats really up depend on people who are creating sevrer what functionaly will depend on those values and what parameter gonna setup
 // on hackeer news see =>
 // http://hn.algolia.com/api/vl/items/:id   => domain[in our case is local5000]here it is algoia.com/api/version no./ route parameter => a pecfic id
 //http://hn.algolia.com/api/vl/items/:username => same example with username
@@ -38,7 +38,7 @@ app.get('/api/products/:productID/reviews/:reviewID',(req,res)=>{
 //    res.send('hello world')
 //})
 
-app.get('api/v1/query',(req,res)=>{// a simple route with callback 
+app.get('/api/v1/query',(req,res)=>{// a simple route with callback 
     //console.log(req.query) // you can add as many names a syou want see each and every thing is practical just do it by yourself 
     const{search, limit} = req.query
     let sortedProducts =[... products]// spread operator
@@ -51,6 +51,7 @@ if (search) {
 
 if (limit) {
     sortedProducts = sortedProducts.slice(0,Number(limit))
+    return res.status(200).json(sortedProducts)
 }
 //res.status(200).json(sortedProducts)
 //res.status('hello world')

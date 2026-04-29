@@ -14,18 +14,16 @@ app.get('/api/products',(req,res)=>{
 
     res.json(newProducts)
 })
-
-app.get('/api/products/1',(req,res)=>{ // now i want a specfic link in those group of links  => but what if we have 200 links so we have route params 
-    const singleProduct = products.find((product)=>product.id===1)
-
-    res.json(singleProduct)
-})
+//
+//app.get('/api/products/1',(req,res)=>{ // now i want a specfic link in those group of links  => but what if we have 200 links so we have route params 
+//    const singleProduct = products.find((product)=>product.id===1)
+//
+//    res.json(singleProduct)
+//})
 
 
 //REQ PARMS
-app.get('/api/products/:productID',(req,res)=>{
-    console.log(req);// gonna give  a giant onbject which have many useful prop one of them is params 
-//
+
 
 //// the thing that you are gonna put in url as that rout parameter is always gonna come as a string 
 //
@@ -34,7 +32,10 @@ app.get('/api/products/:productID',(req,res)=>{
 //
 
 //now the actual wway
-    const {productID} = req.params // it will give a string 
+
+app.get('/api/products/:productID',(req,res)=>{
+    console.log(req);// gonna give  a giant onbject which have many useful prop one of them is params 
+    const {productID} = req.params // it will give a string ,const productID = req.params.productID; =>same
     const singleProduct = products.find((product)=>product.id===Number(productID))// prduct ids a re no. => now i can get my product 1,2,3,4 sepratly
 
     if (!singleProduct) {
