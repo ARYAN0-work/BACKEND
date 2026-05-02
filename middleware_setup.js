@@ -4,6 +4,7 @@ const express = require('express')
 const app =express()
 // REQ => MIDDLEWARE => RES
 
+/*
 const logger=()=>{
     const method =req.method
     const url =req.url
@@ -11,6 +12,15 @@ const logger=()=>{
     console.log(method,url,time);
     res.send('testing')
     next()//simply termiante the whole cycle 
+}
+*/
+// far better
+const logger = (req, res, next) => {
+    const method = req.method;
+    const url = req.url;
+    const time = new Date().getFullYear();
+    console.log(method, url, time);
+    next(); // Pass the baton!
 }
 
 

@@ -1,6 +1,6 @@
 // now we kow to method fr post request
 
-// if we need to create a frontend to test something for every rute as you can see i mean our devlopment gonna be extremly sllow => use postman for testing apis
+// if we need to create a frontend to test something for every rute as you can see i mean our devlopment gonna be extremly slow => use postman for testing apis
 
 const express = require('express')
 const app = express()

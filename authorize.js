@@ -1,4 +1,4 @@
-const authorize = (res,req,next)=>{
+const authorize = (res,next,req)=>{
     // seting up a specfic query string 
     const {user} = req.query;
     if (user === 'john') {

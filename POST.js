@@ -15,4 +15,4 @@ app.listen(5000,()=>{
     console.log('server is listening on port 5000....');
 })
 
-//post.use is applying middleware to all our routes correct and i also mi=entioned that we have this option of setting up a public folder now  we can call whatever we would want but for this methods examples i prepared a method.publuic => using this we can see how functionalty works 
+//post.use is applying middleware to all our routes correct and i also mentioned that we have this option of setting up a public folder now  we can call whatever we would want but for this methods examples i prepared a method.publuic => using this we can see how functionalty works 
