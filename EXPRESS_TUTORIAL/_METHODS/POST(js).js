@@ -2,8 +2,6 @@
 
 // axios => makes easier to setup http methods; so intead of using built in fetch i could use axios
 
-
-// then theres a setup of axios in cdn library in frontent prt in javascript.html => starting 5 min only this javascript.html was xplained core axios concept
 const express = require('express')
 const app = express()
 let {people} = require('../../data')
@@ -35,12 +33,7 @@ app.post('/api/people',(req,res)=>{// if user tries to submit without any values
 })// now it will simply add it to the list 
 
 /*
-now if you want to do a bit of console logging your'e welecome to do that on frontend if for example you are iffy about syntax but axios there so when we perform a http request with axios we actually getting back a giant object and in that is a data property so that response is coming back from the server and in there you can see i set up a heading 5 with data.person so thats the person that we're sending back from our side from our server now if for ex:- there is an error we go with erroe response again data property bcz theres the useful data sits bcz the object is giant with lots of useful info as far as we are sending back we are sending back in the data and then messages now i'm looking for message property bcz i setup a message property on server 
-*/
-
-
-/*
-now lets try it out so i am gonna send this one so i sent again here nothing chaged but if i take a look at my network tab i should see a api people adnd 201 so thats the response that i am getting on my frint end so lets braverly click on this one and we can see that the request url is api peopel okay the method was post now the eesponse was 201 so it was succesfully created now check out when we look at the request method we have application json do on our front end we do need to add this conetnt type when we are sending the data alos axios adds for us but in genral we have request payload pending and the name is equal to susan that when we add line 16 even we are handling form submitting we are nit handling json data so yes we kniw how to send json data but we're not handling the incoming json data 
+When frontend sends a request using Axios, Axios returns a very large response object containing lots of information like headers, status code, config, and actual server data. The important part for us is usually the data property because that contains the useful response sent by our Express server. So if server sends back something like person:name, frontend can access it using response.data.person and display it in the UI, like inside an <h5> tag. Similarly, if there is an error, server may send a message property like msg:'please provide name value', and frontend can read it using error.response.data.msg. So overall, Axios response object is huge, but most of the time we mainly work with response.data because that contains the actual useful information returned from the backend.
 */
 
 //Route
