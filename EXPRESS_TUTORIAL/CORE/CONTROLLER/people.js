@@ -7,7 +7,7 @@ const{
  createPersonPostman,
  updatePerson,
  deletePerson
-} = require('../controllers/people')
+} = require('../../../controllers/people')
 
 //router.get('/',getPeople)// fn refrence
 //router.post('/',createPerson)

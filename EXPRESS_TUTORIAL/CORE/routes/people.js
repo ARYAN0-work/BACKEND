@@ -3,7 +3,7 @@
 const express = require('express')
 const router = express.Router()
 
-let {people}= require('../data')
+let {people}= require('../../../data')
 
 // we made a base so now we just have to write a simple diffrent thing every time
 
